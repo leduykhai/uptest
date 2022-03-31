@@ -85,24 +85,24 @@ do{
             alert('Thanh Cong!!!')
         }else{
             alert('Nhap Sai Mat Khau')
-            var PassWord = prompt("Nhap Lai Mat Khau Lan "+[i+1])
-            if(SingIn.passWord === PassWord){
-                Login = true
-                alert('Thanh Congg')
-            }else{
                 do{
-                    i++
                     var PassWord = prompt("Nhap Lai Mat Khau Lan "+[i+1])
                     if(SingIn.passWord === PassWord){
                         Login = true
                         alert('Thanh Congg')
                     }
-                }while(i<=3)
-                alert('Nhap Sai Mat Khau Qua '+[i+1] +' Lan')
+                    i++
+                }while(!Login && i<3)
+                if(i===3 && SingIn.passWord != PassWord){
+                    alert('Nhap Sai Mat Khau Qua '+[i] +' Lan')
+                    alert('Tai Khoan Bi Khoa')
+                }
             }
-        }
     }else{
-        alert('Nhap Sai UserName')
+        alert('Nhap Sai UserName Qua '+[i])
+        if(i===3 && SingIn.useName != UserName){
+            alert('Tai Khoan Bi Khoa')
+        }
     }
 
-}while(!Login && i <= 3)
+}while(!Login && i < 3)
