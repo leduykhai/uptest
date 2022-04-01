@@ -66,43 +66,68 @@ for (var i = 1; i <= 1; i++){
 //     // i++
 // }
 
-var i = 0;
-var SingIn = {
-    useName: 'khai',
-    passWord: '123'
-};
-var Login = false;
+// var i = 0;
+// var SingIn = {
+//     useName: 'khai',
+//     passWord: '123'
+// };
+// var Login = false;
 
-do{
-    i++;
+// do{
+//     i++;
 
-    var UserName = prompt("UserName")
-    var PassWord = prompt("PassWord")
+//     var UserName = prompt("UserName")
+//     var PassWord = prompt("PassWord")
 
-    if(SingIn.useName === UserName){
-        if(SingIn.passWord === PassWord){
-            Login = true
-            alert('Thanh Cong!!!')
-        }else{
-            alert('Nhap Sai Mat Khau')
-                do{
-                    var PassWord = prompt("Nhap Lai Mat Khau Lan "+[i+1])
-                    if(SingIn.passWord === PassWord){
-                        Login = true
-                        alert('Thanh Congg')
-                    }
-                    i++
-                }while(!Login && i<3)
-                if(i===3 && SingIn.passWord != PassWord){
-                    alert('Nhap Sai Mat Khau Qua '+[i] +' Lan')
-                    alert('Tai Khoan Bi Khoa')
-                }
-            }
-    }else{
-        alert('Nhap Sai UserName Qua '+[i])
-        if(i===3 && SingIn.useName != UserName){
-            alert('Tai Khoan Bi Khoa')
-        }
-    }
+//     if(SingIn.useName === UserName){
+//         if(SingIn.passWord === PassWord){
+//             Login = true
+//             alert('Thanh Cong!!!')
+//         }else{
+//             alert('Nhap Sai Mat Khau')
+//                 do{
+//                     var PassWord = prompt("Nhap Lai Mat Khau Lan "+[i+1])
+//                     if(SingIn.passWord === PassWord){
+//                         Login = true
+//                         alert('Thanh Congg')
+//                     }
+//                     i++
+//                 }while(!Login && i<3)
+//                 if(i===3 && SingIn.passWord != PassWord){
+//                     alert('Nhap Sai Mat Khau Qua '+[i] +' Lan')
+//                     alert('Tai Khoan Bi Khoa')
+//                 }
+//             }
+//     }else{
+//         alert('Nhap Sai UserName Qua '+[i])
+//         if(i===3 && SingIn.useName != UserName){
+//             alert('Tai Khoan Bi Khoa')
+//         }
+//     }
 
-}while(!Login && i < 3)
+// }while(!Login && i < 3)
+
+// var i = 0
+// var myAccount = {
+//     nameUser: 'admin',
+//     passWord: '123'
+// }
+// var login = false
+
+// do {
+//     i++
+//     var inputNameUser = prompt('NHẬP TÀI KHOẢN')
+//     var inputPassWord = prompt('NHẬP MẬT KHẨU')
+
+//     if (inputNameUser === myAccount.nameUser) {
+//         if (inputPassWord === myAccount.passWord) {
+//             login = true
+//             alert('ĐĂNG NHẬP THÀNH CÔNG!')
+//         }
+//     } else if (i === 4) {
+//         alert('BẠN ĐÃ NHẬP SAI QUÁ NHIỀU LẦN!!! TÀI KHOẢN TẠM KHÓA')
+//     } else {
+//         alert('SAI TÀI KHOẢN HOẶC MẬT KHẨU LẦN ' + i)
+//     }
+// } while(!login && i <= 3)
+
