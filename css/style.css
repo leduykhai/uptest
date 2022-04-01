@@ -158,7 +158,7 @@ button:hover {
     border: none;
 }
 
-.members-list{
+.members-list {
     margin-top: 48px;
 }
 
@@ -167,8 +167,8 @@ button:hover {
     padding: 20px 20px;
     text-align: center;
 }
-.members-list .member-name {
-}
+
+.members-list .member-name {}
 
 .members-list .member-img {
     width: 200px;

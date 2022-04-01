@@ -7,17 +7,17 @@ var myInfo = {
 }
 console.log(myInfo)
 
-var inFo = {
-    name: 'khai',
-    age: 22
-}
+// var inFo = {
+//     name: 'khai',
+//     age: 22
+// }
 
-var result = inFo.age > 0 ? `${inFo.age} Tuổi` : '???'
-console.log(result)
+// var result = inFo.age > 0 ? `${inFo.age} Tuổi` : '???'
+// console.log(result)
 
-for (var i = 1; i <= 1; i++){
-    console.log(i);
-}
+// for (var i = 1; i <= 1; i++){
+//     console.log(i);
+// }
 
 // var myArray = [
 //     'JavaScript',
@@ -131,3 +131,39 @@ for (var i = 1; i <= 1; i++){
 //     }
 // } while(!login && i <= 3)
 
+// var myArray = [
+//     [1, 2],
+//     [3, 4],
+//     [5, 6],
+//     [7, 8]
+// ]
+
+// for(var i=0;i<myArray.length;i++){
+//     for(var j = 0; j<myArray[i].length;j++){
+//         if(j%2!==0){
+//             console.log((myArray[i])[j])
+//         }
+//     }
+// }
+
+// for(var i = 100;i > 0;i -=5){
+//     console.log(i)
+// }
+
+var arr = ['a', 'b', 'c', 'd', 'd', 'c', 'a'];
+
+function solution(start, end, cb) {
+    if (start < end) {
+        cb(start);
+        return solution(start + 1, end, cb)
+    }
+}
+
+solution(0, arr.length, function (a) {
+    for (var i = a + 1; i < arr.length; i++) {
+        if (arr[a] == arr[i]) {
+            arr.splice(i, 1);
+            console.log(arr);
+        }
+    }
+});
